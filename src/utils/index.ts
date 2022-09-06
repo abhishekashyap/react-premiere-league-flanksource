@@ -1,3 +1,4 @@
+export { default as generateLeagueTableData } from "./generateLeagueTableData";
 export { default as getAllMatches } from "./getAllMatches";
 export { default as getTeamRecord } from "./getTeamRecord";
 export { default as getTeams } from "./getTeams";
