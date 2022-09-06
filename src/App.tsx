@@ -1,4 +1,4 @@
-import { getAllMatches } from "@utils";
+import { getAllMatches } from "utils";
 import { data } from "./data";
 import "./styles.css";
 
