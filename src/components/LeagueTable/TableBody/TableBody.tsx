@@ -11,7 +11,7 @@ export const TableBody: FunctionComponent<TableBodyProps> = ({ dataList }) => (
         <TableRow key={id}>
           <TableData>{idx + 1}</TableData>
           <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 h-full hover:underline">
-            <Link to={`${id}/fixtures`}>{name}</Link>
+            <Link to={`${name}/fixtures`}>{name}</Link>
           </th>
           <TableData>{gamesPlayed}</TableData>
           <TableData>{win}</TableData>
