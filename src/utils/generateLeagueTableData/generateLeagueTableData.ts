@@ -4,11 +4,13 @@ import { Points } from "./constants";
 export const generateLeagueTableData = (
   teamList: TeamList
 ): LeagueTableDataType[] =>
-  Object.keys(teamList).map((name) => ({
-    name,
-    points:
-      teamList[name].win * Points.WIN +
-      teamList[name].draw * Points.DRAW +
-      teamList[name].loss * Points.LOST,
-    ...teamList[name],
-  }));
+  Object.keys(teamList)
+    .map((name) => ({
+      name,
+      points:
+        teamList[name].win * Points.WIN +
+        teamList[name].draw * Points.DRAW +
+        teamList[name].loss * Points.LOST,
+      ...teamList[name],
+    }))
+    .sort((a, b) => b.points - a.points);
