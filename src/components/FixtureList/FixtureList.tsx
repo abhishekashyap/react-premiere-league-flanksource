@@ -1,7 +1,7 @@
 import Subheader from "components/Subheader";
 import { Tabs } from "components/Tabs/Tabs";
 import { FunctionComponent, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getFixtureList, getFutureGames, getPastGames } from "utils";
 import MatchList from "./MatchList";
 import { FixtureListProps } from "./types";
@@ -34,6 +34,12 @@ export const FixtureList: FunctionComponent<FixtureListProps> = ({
 
   return (
     <>
+      <Link
+        to="/"
+        className="px-4 py-1 text-sm flex items-center gap-2 justify-center text-gray-600 absolute bg-slate-100 hover:bg-slate-600 hover:text-white transition-all rounded-full font-bold"
+      >
+        <span className="text-lg">&#8249;</span> Go back
+      </Link>
       <Subheader>{params.teamName} - Fixtures</Subheader>
       <Tabs
         activeTab={activeTab}
