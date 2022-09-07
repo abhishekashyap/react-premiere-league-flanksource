@@ -7,8 +7,8 @@ import { TableBodyProps } from "./types";
 export const TableBody: FunctionComponent<TableBodyProps> = ({ dataList }) => (
   <tbody>
     {dataList.map(
-      ({ id, name, gamesPlayed, win, draw, loss, goals, points }, idx) => (
-        <TableRow key={id}>
+      ({ name, gamesPlayed, win, draw, loss, goals, points }, idx) => (
+        <TableRow key={name}>
           <TableData>{idx + 1}</TableData>
           <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 h-full hover:underline">
             <Link to={`${name}/fixtures`}>{name}</Link>
