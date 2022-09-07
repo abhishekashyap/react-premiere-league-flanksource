@@ -10,7 +10,7 @@ export const MatchList: FunctionComponent<MatchListProps> = ({ matches }) => {
         const formattedDate = format(parsedDate, "EEEE d MMMM y");
         const formattedTime = format(parsedDate, "HH:mm");
         return (
-          <li>
+          <li key={match.match}>
             <h4 className="mt-8 text-xl font-semibold text-gray-600">
               {formattedDate}
             </h4>
