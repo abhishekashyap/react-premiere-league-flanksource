@@ -1,3 +1,4 @@
+import Subheader from "components/Subheader";
 import { FunctionComponent } from "react";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
@@ -7,8 +8,11 @@ export const LeagueTable: FunctionComponent<LeagueTableProps> = ({
   headings,
   dataList,
 }) => (
-  <table>
-    <TableHead headings={headings} />
-    <TableBody dataList={dataList} />
-  </table>
+  <>
+    <Subheader>League Table</Subheader>
+    <table className="w-full">
+      <TableHead headings={headings} />
+      <TableBody dataList={dataList} />
+    </table>
+  </>
 );

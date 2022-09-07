@@ -7,7 +7,7 @@ export const Tab: FunctionComponent<TabProps> = ({
   isActive,
 }) => (
   <li
-    className={`flex-1 text-center text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium border-transparent border-b-2 ${
+    className={`flex-1 text-center transition-all text-gray-500 hover:text-gray-600 hover:border-gray-300 hover:bg-gray-100 rounded-t-lg py-4 px-4 text-sm font-medium border-b-2 ${
       isActive
         ? "text-blue-500 border-blue-500 hover:text-blue-500 hover:border-blue-500"
         : ""

@@ -1,3 +1,4 @@
+import Subheader from "components/Subheader";
 import { Tabs } from "components/Tabs/Tabs";
 import { FunctionComponent, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -32,6 +33,13 @@ export const FixtureList: FunctionComponent<FixtureListProps> = ({
   ];
 
   return (
-    <Tabs activeTab={activeTab} setActiveTab={setActiveTab} tabConfig={TABS} />
+    <>
+      <Subheader>{params.teamName} - Fixtures</Subheader>
+      <Tabs
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        tabConfig={TABS}
+      />
+    </>
   );
 };
