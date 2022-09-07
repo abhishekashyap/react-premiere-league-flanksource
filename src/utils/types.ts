@@ -7,6 +7,7 @@ export type TeamRecordList = {
 };
 
 export type Team = Record & {
+  id: string | null;
   goals: Goal;
 };
 
