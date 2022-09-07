@@ -10,7 +10,6 @@ export default function App() {
   const matches = getAllMatches(data);
   const teamList = getTeamsData(matches);
   const leagueTableData = generateLeagueTableData(teamList);
-  console.log("leagueTableData: ", leagueTableData);
 
   return (
     <PageLayout>
