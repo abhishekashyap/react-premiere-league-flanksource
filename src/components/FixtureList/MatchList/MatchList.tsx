@@ -11,11 +11,13 @@ export const MatchList: FunctionComponent<MatchListProps> = ({ matches }) => {
         const formattedTime = format(parsedDate, "HH:mm");
         return (
           <li>
-            <h4 className="mt-8 text-xl font-semibold">{formattedDate}</h4>
-            <div className="mt-2 flex justify-between border border-gray-200 rounded overflow-hidden shadow-md px-4 py-2 bg-white">
-              <span className="flex-1 font-medium">{match.team1}</span>
+            <h4 className="mt-8 text-xl font-semibold text-gray-600">
+              {formattedDate}
+            </h4>
+            <div className="text-gray-700 mt-2 flex justify-between border border-gray-200 rounded overflow-hidden shadow-md px-4 py-2 bg-white">
+              <span className="flex-1 font-semibold">{match.team1}</span>
               <span className="flex-1 text-center">{formattedTime}</span>
-              <span className="flex-1 text-right font-medium">
+              <span className="flex-1 text-right font-semibold">
                 {match.team2}
               </span>
             </div>
