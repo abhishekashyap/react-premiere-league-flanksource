@@ -1,4 +1,4 @@
-import { getTeamRecord, replaceSpaceWithHyphen } from "utils";
+import { getTeamRecord } from "utils";
 import { Match, TeamList } from "utils/types";
 import { defaultValue } from "./constants";
 
@@ -11,7 +11,6 @@ export const getTeamsData = (matches: Match[]): TeamList => {
     const computeCommonValues = (team: string) => ({
       ...defaultValue,
       ...teamRecord[team],
-      id: replaceSpaceWithHyphen(team),
       gamesPlayed: (teamList[team]?.gamesPlayed || 0) + 1,
     });
 
