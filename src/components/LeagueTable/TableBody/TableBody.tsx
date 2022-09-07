@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 import TableData from "./TableData";
 import TableRow from "./TableRow";
 import { TableBodyProps } from "./types";
@@ -6,11 +7,11 @@ import { TableBodyProps } from "./types";
 export const TableBody: FunctionComponent<TableBodyProps> = ({ dataList }) => (
   <tbody>
     {dataList.map(
-      ({ name, gamesPlayed, win, draw, loss, goals, points }, idx) => (
-        <TableRow key={name}>
+      ({ id, name, gamesPlayed, win, draw, loss, goals, points }, idx) => (
+        <TableRow key={id}>
           <TableData>{idx + 1}</TableData>
-          <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
-            {name}
+          <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 h-full hover:underline">
+            <Link to={`${id}/fixtures`}>{name}</Link>
           </th>
           <TableData>{gamesPlayed}</TableData>
           <TableData>{win}</TableData>
