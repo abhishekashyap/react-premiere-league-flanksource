@@ -3,11 +3,9 @@ import { Tabs } from "components/Tabs/Tabs";
 import { FunctionComponent, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getFixtureList, getFutureGames, getPastGames } from "utils";
+import { CURRENT_DATE } from "../../constants";
 import MatchList from "./MatchList";
 import { FixtureListProps } from "./types";
-
-// 5 May 2021 at 2pm
-const CURRENT_DATE = new Date(2021, 4, 5, 14);
 
 export const FixtureList: FunctionComponent<FixtureListProps> = ({
   matches,

@@ -3,6 +3,7 @@ import LeagueTable from "components/LeagueTable";
 import PageLayout from "layout";
 import { Route, Routes } from "react-router-dom";
 import { generateLeagueTableData, getAllMatches, getTeamsData } from "utils";
+import { TableHeadings } from "./constants";
 import { data } from "./data";
 import "./styles.css";
 
@@ -17,19 +18,7 @@ export default function App() {
         <Route
           path="/"
           element={
-            <LeagueTable
-              headings={[
-                "Position",
-                "Club",
-                "Played",
-                "Won",
-                "Drawn",
-                "Lost",
-                "Goal Difference",
-                "Points",
-              ]}
-              dataList={leagueTableData}
-            />
+            <LeagueTable headings={TableHeadings} dataList={leagueTableData} />
           }
         />
         <Route
