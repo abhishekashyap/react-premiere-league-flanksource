@@ -1,4 +1,4 @@
-import { Match } from "@utils/types";
+import { Match } from "../types";
 
 /**
  * Get fixture list for the specified team

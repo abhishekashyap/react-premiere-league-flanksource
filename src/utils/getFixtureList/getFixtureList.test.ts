@@ -1,4 +1,4 @@
-import { Match } from "@utils/types";
+import { Match } from "../types";
 import { getFixtureList } from "./getFixtureList";
 
 const mockTeamName = "Manchester United";

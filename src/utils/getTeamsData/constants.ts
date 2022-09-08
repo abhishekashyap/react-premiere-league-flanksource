@@ -1,4 +1,4 @@
-import { Team } from "@utils/types";
+import { Team } from "../types";
 
 export const defaultValue: Team = {
   win: 0,

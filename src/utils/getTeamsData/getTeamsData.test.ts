@@ -1,4 +1,4 @@
-import { Match, TeamList } from "@utils/types";
+import { Match, TeamList } from "../types";
 import { getTeamsData } from "./getTeamsData";
 
 const mockTeamName = "Manchester United";

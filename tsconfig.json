@@ -8,12 +8,15 @@
       "esnext"
     ],
     "types": ["jest", "node", "@testing-library/jest-dom"],
+    /* 
+    * Paths are not supported in codesandbox
     "paths": {
-      "components": ["components"],
-      "components/*": ["components/*"],
-      "@utils": ["utils"],
-      "@utils/*": ["utils/*"],
-    },
+       "components": ["components"],
+       "components/*": ["components/*"],
+       "@utils": ["utils"],
+       "@utils/*": ["utils/*"],
+     },
+     */
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

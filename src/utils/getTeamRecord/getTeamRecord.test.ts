@@ -1,4 +1,4 @@
-import { TeamList } from "@utils/types";
+import { TeamList } from "../types";
 import { getTeamRecord } from "./getTeamRecord";
 
 const mockTeamName1 = "Manchester United";

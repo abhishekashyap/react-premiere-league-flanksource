@@ -1,4 +1,4 @@
-import { Match } from "@utils/types";
+import { Match } from "../../utils/types";
 
 export type GetAllMatchesArgs = {
   score: Score;
