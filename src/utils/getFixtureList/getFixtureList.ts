@@ -1,7 +1,15 @@
 import { Match } from "@utils/types";
 
+/**
+ * Get fixture list for the specified team
+ * @param  {Match[]} matches - Array of objects containing match info
+ * @param  {string} teamName - Name of the team whose fixture list you want to get
+ * @returns Fixture list - Array of objects containing match id, date, score and team names that participated in the match
+ */
 export const getFixtureList = (matches: Match[], teamName: string) =>
-  matches.filter(
-    (match) =>
-      match?.team1?.includes(teamName) || match?.team2?.includes(teamName)
-  );
+  matches
+    ? matches.filter(
+        (match) =>
+          match?.team1?.includes(teamName) || match?.team2?.includes(teamName)
+      )
+    : [];
