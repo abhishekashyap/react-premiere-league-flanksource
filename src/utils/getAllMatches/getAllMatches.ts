@@ -3,8 +3,8 @@ import { GetAllMatchesArgs, GetAllMatchesReturnType } from "./types";
 
 /**
  * Get formatted list of all the matches
- * @param  {GetAllMatchesArgs} data - Array of objects containing score and date keys
- * @returns Array of objects containing match id, date, score and team names that participated in the match
+ * @param  {GetAllMatchesArgs} data - array of objects containing score and date keys
+ * @returns array of objects containing match id, date, score and team names that participated in the match
  */
 export const getAllMatches = (
   data: GetAllMatchesArgs
